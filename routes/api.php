@@ -17,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::prefix('/v1')->group(function () {
+    Route::post('/login', [App\Http\Controllers\Api\V1\Auth\LoginController::class, 'login']);
+    
+    Route::middleware('auth:sanctum')->group(function () {
+
+        // Calculate Salary
+
+        Route::get('/salary', [App\Http\Controllers\Api\V1\Salary\SalaryController::class, 'index']);
+
+    });
+});
