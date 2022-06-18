@@ -25,8 +25,8 @@ class CalculateSalaryRequest extends FormRequest
     {
         return [
             "base_salary"=>["required","numeric", "min:0"],
-            "worked_days"=>["required","numeric", "min:1", "max:30"], 
-            "sales_value"=>["required","numeric", "min:0"]
+            "worked_days"=>["required","integer", "min:1", "max:30"], 
+            "sales_value"=>["required","integer", "min:0"]
         ];
     }
 }
