@@ -1,7 +1,16 @@
 
 # Kubilabs Test
 
-Postman File: Kubilabs Test.postman_collection.json
+**Postman File:** Kubilabs Test.postman_collection.json
+
+
+## Demo
+
+Demo URL
+
+```url
+http://206.189.8.237/
+```
 
 
 ## API Reference
